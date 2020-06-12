@@ -19,7 +19,7 @@ jobs:
         run: yarn build
         
       - name: Install Surge
-        run: npm install -g surge
+        run:  npm install --global surge
         
       - name: Deploy to surge
         run: surge./build bootcampclass2webapp.surge.sh &{{ secrets.WEB_TOKEN }}
